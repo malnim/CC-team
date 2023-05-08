@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+#imgmain{
+	padding: 30px;
+	padding-left: 0px;	
+	display:inline-block;
+}
+
+#imgsub{
+		margin-bottom:10px;
+}
+
+#big{
+	width: 516px;
+	height: 400px;
+}
+
+.small{
+
+	width: 100px;
+	height: 100px;
+	text-align:center;
+
+}
