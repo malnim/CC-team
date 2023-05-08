@@ -1,8 +1,10 @@
 package kr.ac.kopo.Controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
@@ -17,13 +19,7 @@ final String path = "investment/";
 		return path + "list";
 		
 	}
-	
-	@GetMapping("/list2")
-	public String list2() {
-		return path + "list2";
-		
-	}
-	
+
 	@GetMapping("/detail")
 	public String detail() {
 		return path + "detail";
@@ -36,5 +32,17 @@ final String path = "investment/";
 	public String payment() {
 		return path + "payment";
 	}
+	@GetMapping("/test")
+	public String test() {
+		return path + "test";
+	}
+	@GetMapping("/signature")
+	public String signature(Model model) {
+		return path + "signature";
+	}
 	
+	@RequestMapping(value="/signature", method = {RequestMethod.POST})
+	public String signature() {
+		return path + "signature";
+	}
 }

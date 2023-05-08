@@ -84,7 +84,8 @@ h1 {
 				<div id="textmain">
 					<h1>#[기업 or 개인 표시] #(타이틀)</h1>
 					<p>N명 참여</p>
-					<p>현재금액 / 목표금액</p>
+					<p>현재금액 / 1000원 목표금액</p>
+					<p>최소투자금액 100원</p>
 					<p>%완료</p>
 					<p>남은 기간</p>
 					<p>
@@ -94,6 +95,7 @@ h1 {
 						<i class="bi bi-heart-fill"></i>
 					</p>
 					<a href="agree">투자하기</a>
+					<a href="test">테스트</a>
 					<button>문의하기</button>
 				</div>
 				<div id="imgsub">
