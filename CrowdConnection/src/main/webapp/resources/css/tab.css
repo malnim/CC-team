@@ -11,7 +11,8 @@ ul.tabs li{
 	color: white;
 	padding: 10px 15px;
 	cursor: pointer;
-}
+	font-size:14px;
+     }
 
 ul.tabs li.current{
 	background: #e0e0e0;

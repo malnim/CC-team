@@ -98,6 +98,7 @@ hr {
 					<a href="../"><img src="/resources/img/logo.png"></a> 
 					 <a href="signup" id="sign_up">회원가입</a>
 					<a href="login" id="sign_in">로그인</a>
+					<a href="/mypage/list">마이 페이지</a>
 				</div>
 			</c:if>
 			<c:if test="${sessionScope.member!=null}">

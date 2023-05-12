@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="/resources/css/change.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/resources/css/tab.css">
+<link rel="stylesheet" href="/resources/css/modal.css">
 <script src="/resources/js/tablabel.js"></script>
 <title>크라우드 커넥션</title>
 <script>
@@ -47,7 +48,13 @@ h1 {
 
 .tabs {
 	display: inline-block;
-	width: 297px;
+	width: 100%;
+}
+.tab-content{
+	font-size:14px;
+}
+.tab-link{
+	font-size:18px;
 }
 </style>
 </head>
@@ -95,12 +102,12 @@ h1 {
 						<i class="bi bi-heart-fill"></i>
 					</p>
 					<a href="agree">투자하기</a>
-					<a href="test">테스트</a>
-					<button>문의하기</button>
+					
+					<button type='button' id="modal_btn">문의하기</button>
 				</div>
 				<div id="imgsub">
-					<img class="small" src="/resources/img/PREVIEW.png"> <img
-						class="small" src="/resources/img/preview2.jpg"> <img
+					<img class="small" src="/resources/img/PREVIEW.png"> 
+					<img class="small" src="/resources/img/preview2.jpg"> <img
 						class="small" src="/resources/img/preview3.jpg"> <img
 						class="small" src="/resources/img/PREVIEW.png"> <img
 						class="small" src="/resources/img/preview2.jpg">
@@ -172,6 +179,14 @@ h1 {
 			</section>
 		</div>
 	</article>
+	 <div class="black_bg"></div>
+<div class="modal_wrap">
+    <div class="modal_close"><a href="#">close</a></div>
+    <div>
+        모달창 내용
+    </div>
+</div>
 
+	<script src="/resources/js/modal.js"></script>
 </body>
 </html>

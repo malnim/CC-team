@@ -45,4 +45,8 @@ final String path = "investment/";
 	public String signature() {
 		return path + "signature";
 	}
+	@GetMapping("/success")
+	public String success() {
+		return path +"success";
+	}
 }
