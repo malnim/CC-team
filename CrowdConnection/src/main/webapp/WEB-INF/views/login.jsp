@@ -1,5 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="java.security.SecureRandom" %>
+<%@ page import="java.math.BigInteger" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +12,17 @@
     <script src="./login.js"></script>
 </head>
 <body>
+  <%
+    String clientId = "ojuezyapQv8ZcklxQNIJ";//애플리케이션 클라이언트 아이디값";
+    String redirectURI = URLEncoder.encode("http://localhost:9090/signup/step2", "UTF-8");
+    SecureRandom random = new SecureRandom();
+    String state = new BigInteger(130, random).toString();
+    String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";
+    apiURL += "&client_id=" + clientId;
+    apiURL += "&redirect_uri=" + redirectURI;
+    apiURL += "&state=" + state;
+    session.setAttribute("state", state);
+ %>
     <div class="main">
         <div>
             <img src="logo.png" height="10%" width="10%">
@@ -26,10 +39,10 @@
         </form>
             <div>
             	<div>
-                	<a href="kakaologin"><button type="button">카카오로 로그인하기</button></a>
+                	<a href="/naverlogin"><button type="button">카카오로 로그인하기</button></a>
                 </div>
                 <div>
-                	<a href="naverlogin"><button type="button">네이버로 로그인하기</button></a>
+                	<a href="<%=apiURL%>"><img height="50" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/></a>
 				</div>            
             </div>
     </div>

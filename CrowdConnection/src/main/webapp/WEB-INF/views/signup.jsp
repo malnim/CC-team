@@ -16,6 +16,7 @@
 		<p>내용인것들</p>
 		<p>내용인것들</p>
 		<p>내용인것들</p>
+		</div>
 		<div>
 			<a href="signup/step1"><button type="button">일반 가입하기</button></a>
 		</div>
@@ -23,6 +24,5 @@
 			<a><button type="button">카카오로 가입하기 이미지</button></a> <a><button
 					type="button">네이버로 가입하기 이미지</button></a>
 		</div>
-	</div>
 </body>
 </html>

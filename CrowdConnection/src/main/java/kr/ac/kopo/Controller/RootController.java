@@ -62,6 +62,10 @@ public class RootController {
 		session.invalidate();
 		return "redirect:.";
 	}
+	@GetMapping("https://nid.naver.com/oauth2.0/token")
+	public String naverlogin() {
+		return "naverlogin";
+	}
 	
 	
 }
